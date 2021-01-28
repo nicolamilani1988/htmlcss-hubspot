@@ -37,7 +37,7 @@ button{
   color:white;
 }
 
-select{
+select.language{
   background-color: #F4F9FD;
   border: 1px solid #F4F9FD;
   text-decoration: none;
@@ -56,17 +56,22 @@ header a{
 
 
 /* REGOLE HEADER */
-/* regole barra header */
 header{
   position: fixed;
   left: 0;
   right: 0;
 }
 
-header section{
-  background-color: #F4F9FD;
+header:first-child, header:last-child{
   height: 50px;
 }
+
+/* regole header-bar */
+#header-bar{
+  background-color: #F4F9FD;
+}
+
+
 
 header button{
   padding: 10px;
@@ -75,10 +80,16 @@ header button{
 .row.head > *{
   height: 50px;
   line-height: 50px;
-
   /* debug */
   /* width: 200px; */
   /* background-color: lightblue; */
+}
+
+.row.head a:before{
+  content:'';
+  border-left: 2px solid #32495B;
+  height: 50px;
+  margin-right: 10px;
 }
 
 #login{
@@ -88,14 +99,33 @@ header button{
 
 /* regole header-nav */
 nav{
-  background-color: #02BBED;
-  height: 50px;
+  /* debug */
+  /* background-color: #02BBED; */
+  background-color: white;
 }
 .row.nav > *{
-  width: 200px;
-  height: 30px;
-  background-color: blue;
+  height: 50px;
+  line-height: 50px;
+
+  /* debug */
+  /* width: 200px; */
+  /* background-color: blue; */
 }
+
+ul li{
+  display: inline-block;
+}
+
+#logo{
+  margin-left: 0px;
+}
+
+.row.nav .float-left:first-child{
+  padding: 10px 0;
+  margin-left: 0px;
+
+}
+
 
 /* REGOLE JUMBOTRON */
 .jumbotron{
