@@ -5,6 +5,11 @@
   box-sizing: border-box;
 }
 
+body{
+  color: #32495B;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
 .center-container{
   width: 80%;
   margin:auto;
@@ -23,17 +28,62 @@
 .float-right{
   float:right;
 }
+
+button{
+  background-color: #FE775A;
+  padding: 20px 30px;
+  border-radius: 5px;
+  border: 1px solid #FE775A;
+  color:white;
+}
+
+select{
+  background-color: #F4F9FD;
+  border: 1px solid #F4F9FD;
+  text-decoration: none;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #32495B;
+}
+
+header a, header button{
+  margin-left: 10px;
+}
+
+header a{
+  text-decoration: none;
+  color: #32495B;
+}
+
+
 /* REGOLE HEADER */
 /* regole barra header */
+header{
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
 header section{
   background-color: #F4F9FD;
   height: 50px;
 }
 
+header button{
+  padding: 10px;
+}
+
 .row.head > *{
-  width: 200px;
-  height: 30px;
-  background-color: lightblue;
+  height: 50px;
+  line-height: 50px;
+
+  /* debug */
+  /* width: 200px; */
+  /* background-color: lightblue; */
+}
+
+#login{
+  background-color: white;
+  color: #FE775A;
 }
 
 /* regole header-nav */
