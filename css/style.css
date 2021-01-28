@@ -133,6 +133,8 @@ nav{
 #join-us{
   background-color: #CEA9EE;
   height: 200px;
+  padding: 20px 0 20px;
+
 }
 
 .row.join-us > *{
@@ -143,3 +145,25 @@ nav{
 
 /* REGOLE FOOTER */
 /* regole utility links */
+  #utility-links{
+    background-color: #32495B;
+    padding: 20px 0 20px;
+  }
+
+  .row.utility-links > *{
+    width: calc(25% - 8px);
+    border: 1px solid white;
+    height: 100px;
+  }
+
+  /* regole languages+credits */
+  #credits{
+    background-color: #32495B;
+    padding: 20px 0 20px;
+  }
+
+  .row.credits > *{
+    width: 40%;
+    border: 1px solid white;
+    height: 50px;
+  }
