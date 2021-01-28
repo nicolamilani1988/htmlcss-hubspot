@@ -37,6 +37,14 @@ button{
   color:white;
 }
 
+.small-text{
+  font-size: 80%;
+}
+
+p.text, p.small-text{
+  margin: 20px 0;
+}
+
 
 /* REGOLE HEADER */
 header{
@@ -46,7 +54,7 @@ header{
 }
 
 header:first-child, header:last-child{
-  height: 50px;
+  min-height: 50px;
 }
 
 header a, header button{
@@ -76,7 +84,7 @@ header button{
 }
 
 .row.head > *{
-  height: 50px;
+  min-height: 50px;
   line-height: 50px;
   /* debug */
   /* width: 200px; */
@@ -86,7 +94,7 @@ header button{
 .row.head a:before{
   content:'';
   border-left: 2px solid #32495B;
-  height: 50px;
+  min-height: 50px;
   margin-right: 10px;
 }
 
@@ -103,7 +111,7 @@ header button{
   /* background-color: #02BBED; */
 }
 .row.nav > *{
-  height: 50px;
+  min-height: 50px;
   line-height: 50px;
 
   /* debug */
@@ -129,7 +137,7 @@ header button{
 .jumbotron{
   background-image: url('../img/jumbotron.png');
   width: 100%;
-  height: 570px;
+  min-height: 570px;
   padding-top: 100px;
   background-size: cover;
   background-position: top;
@@ -139,12 +147,17 @@ header button{
 
 #jumbotron-description{
   width: 40%;
-  
-  /* debug */
-  height: 250px;
-  background-color: green;
   margin-left: 10%;
   margin-top:50px;
+  /* debug */
+  /* min-height: 250px; */
+  /* background-color: green; */
+
+}
+
+h1{
+  font-size: 50px;
+  line-height: 50px;
 }
 
 /* REGOLE RIGA VERDE SEPARAZIONE */
@@ -154,6 +167,7 @@ header button{
   border-top: 3px solid #32495B;
   border-bottom: 3px solid #32495B;
 }
+
 
 /* REGOLE MAIN */
 /* regole prima parte main */
