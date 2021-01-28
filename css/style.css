@@ -61,8 +61,9 @@ nav{
 
 /* REGOLE MAIN */
 /* regole prima parte main */
-.strengths{
+#strengths{
   background-color: orange;
+  padding: 20px 0 20px;
 }
 
 .section-title{
@@ -73,11 +74,11 @@ nav{
   width: 30%;
   height: 100px;
   background-color: red;
-  margin: 20px auto 20px;
+  margin: 20px auto 0;
 }
 
 .float-left.central{
-  margin:20px 5% 20px;
+  margin:20px 5% 0;
 }
 
 #strenght{
@@ -85,4 +86,16 @@ nav{
   height: 50px;
   float:left;
   background-color: #FF6A13;
+}
+
+/* regole seconda parte */
+#awards{
+  background-color: #00B6AC;
+  padding: 20px 0 20px;
+}
+
+.row.awards > *{
+  width: 25%;
+  height: 50px;
+  border: 1px solid white;
 }
