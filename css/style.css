@@ -42,6 +42,10 @@ body{
   font-size: 80%;
 }
 
+p.text{
+  line-height: 25px;
+}
+
 p.text, p.small-text{
   margin: 20px 0;
 }
@@ -275,7 +279,7 @@ main .button{
 .row.strengths > *{
   width: 30%;
   margin: 40px auto 0;
-  padding: 10px 20px 0;
+  padding: 20px 30px 0;
   /* debug */
   /* height: 100px; */
   /* background-color: red; */
@@ -364,7 +368,6 @@ main .button{
 
 .row.partnerships .float-left{
   width: 20%;
-  line-height: 25px;
   /* debug */
   /* background-color: green; */
 }
