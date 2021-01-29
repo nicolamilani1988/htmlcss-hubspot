@@ -50,6 +50,10 @@ a{
   text-decoration: none;
 }
 
+h2{
+  font-size: 30px;
+}
+
 
 /* REGOLE HEADER */
 header{
@@ -69,6 +73,7 @@ header a, header .button{
 header a{
   color: #32495B;
 }
+
 
 /* regole header-bar */
 #header-bar{
@@ -108,17 +113,16 @@ header .button{
   color: #FE775A;
 }
 
+
 /* regole header-nav */
 #header-nav{
   background-color: white;
-
   /* debug */
   /* background-color: #02BBED; */
 }
 .row.nav > *{
   min-height: 50px;
   line-height: 50px;
-
   /* debug */
   /* width: 200px; */
   /* background-color: blue; */
@@ -130,6 +134,10 @@ header .button{
 
 #logo img{
   vertical-align: middle;
+}
+
+#logo{
+  margin-left: 0;
 }
 
 
@@ -159,6 +167,7 @@ h1{
   line-height: 50px;
 }
 
+
 /* REGOLE RIGA VERDE SEPARAZIONE */
 #separation-bar{
   height: 50px;
@@ -173,10 +182,10 @@ main .button{
   margin: 20px 0;
 }
 
+
 /* regole prima parte main */
 #strengths{
-  padding: 40px;
-  /* debug */
+  padding: 40px 0;
   background-color: #F4F9FD;
 }
 
@@ -263,7 +272,6 @@ main .button{
   display: inline-block;
 }
 
-
 .row.strengths > *{
   width: 30%;
   margin: 40px auto 0;
@@ -293,17 +301,52 @@ main .button{
   margin:40px 5% 0;
 }
 
+
 /* regole seconda parte main */
 #awards{
   background-color: #00B6AC;
-  padding: 20px 0 20px;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+.row.awards{
+  padding: 20px 0;
 }
 
 .row.awards > *{
   width: 25%;
-  height: 50px;
   border: 1px solid white;
+  /* debug */
+  /* height: 50px; */
 }
+
+.row.awards .float-left{
+  padding-top: 10px;
+}
+
+.row.awards .float-left:last-child h1:last-of-type::before{
+  content: '';
+  display: block;
+  height: 10px;
+}
+
+#top-left-angle, .float-left.central-high, #top-right-angle{
+  border-top: 1px solid transparent;
+}
+
+#bottom-left-angle, .float-left.central-low, #bottom-right-angle{
+  border-bottom: 1px solid transparent;
+}
+
+#top-left-angle, #bottom-left-angle{
+  border-left: 1px solid transparent;
+}
+
+#top-right-angle, #bottom-right-angle{
+  border-right: 1px solid transparent;
+}
+
 
 /* regole terza parte main */
 #partnerships{
