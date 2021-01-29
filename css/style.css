@@ -35,6 +35,7 @@ body{
   border-radius: 5px;
   border: 1px solid #FE775A;
   color:white;
+  display: inline-block;
 }
 
 .small-text{
@@ -84,6 +85,7 @@ select.language{
 
 header .button{
   padding: 10px;
+  display: inline;
 }
 
 .row.head > *{
@@ -152,10 +154,6 @@ header .button{
   /* background-color: green; */
 }
 
-#jumbotron-description a:only-of-type{
-  display: inline-block;
-}
-
 h1{
   font-size: 50px;
   line-height: 50px;
@@ -171,11 +169,37 @@ h1{
 
 
 /* REGOLE MAIN */
+main .button{
+  margin: 10px 0;
+}
+
 /* regole prima parte main */
 #strengths{
   padding: 20px 0 20px;
   /* debug */
-  background-color: orange;
+  background-color: #F4F9FD;
+}
+
+#strengths h3, #strengths h4{
+  margin: 10px 0;
+  display: inline-block;
+}
+
+#strengths ul{
+  margin: 10px auto;
+}
+
+#strengths li i{
+  background-color: #FE775A;
+  color:white;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 60%;
+}
+
+#strengths li span{
+  vertical-align: middle;
+  margin-left: 5px;
 }
 
 .section-title{
@@ -188,6 +212,48 @@ h1{
   width: 20%;
 }
 
+.row.top-strenght, .row.strengths > div{
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #32495B;
+}
+
+.row.top-strenght > *{
+  padding: 5% 0;
+  /* debug */
+  /* height: 50px; */
+  /* background-color: red; */
+}
+
+.row.top-strenght > div:first-of-type{
+  width:15%;
+  margin-right: 5%;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.row.top-strenght > div:first-of-type img{
+  width: 80%;
+}
+
+.row.top-strenght > div:last-of-type{
+  width: 60%;
+}
+
+.row.top-strenght hr{
+  width: 60%;
+  margin-left: 10%;
+  border: 1px solid #32495B;
+  vertical-align: middle;
+  display: inline-block
+}
+
+.row.top-strenght li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+
 .row.strengths > *{
   width: 30%;
   height: 100px;
@@ -197,13 +263,6 @@ h1{
 
 .float-left.central{
   margin:20px 5% 0;
-}
-
-#top-strenght{
-  width:100%;
-  height: 50px;
-  float:left;
-  background-color: #FF6A13;
 }
 
 /* regole seconda parte main */
