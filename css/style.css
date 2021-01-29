@@ -29,7 +29,7 @@ body{
   float:right;
 }
 
-button{
+.button{
   background-color: #FE775A;
   padding: 20px 30px;
   border-radius: 5px;
@@ -45,6 +45,10 @@ p.text, p.small-text{
   margin: 20px 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 
 /* REGOLE HEADER */
 header{
@@ -57,12 +61,11 @@ header:first-child, header:last-child{
   min-height: 50px;
 }
 
-header a, header button{
+header a, header .button{
   margin-left: 10px;
 }
 
 header a{
-  text-decoration: none;
   color: #32495B;
 }
 
@@ -79,7 +82,7 @@ select.language{
   color: #32495B;
 }
 
-header button{
+header .button{
   padding: 10px;
 }
 
@@ -91,7 +94,7 @@ header button{
   /* background-color: lightblue; */
 }
 
-.row.head a:before{
+.row.head a:only-of-type:before{
   content:'';
   border-left: 2px solid #32495B;
   min-height: 50px;
@@ -147,7 +150,10 @@ header button{
   /* debug */
   /* min-height: 250px; */
   /* background-color: green; */
+}
 
+#jumbotron-description a:only-of-type{
+  display: inline-block;
 }
 
 h1{
