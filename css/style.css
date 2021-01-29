@@ -95,7 +95,7 @@ header button{
   content:'';
   border-left: 2px solid #32495B;
   min-height: 50px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 
 #login{
@@ -123,13 +123,8 @@ header button{
   display: inline-block;
 }
 
-#logo{
-  margin-left: 0px;
-}
-
-.row.nav .float-left:first-child{
-  padding: 10px 0;
-  margin-left: 0px;
+#logo img{
+  vertical-align: middle;
 }
 
 
