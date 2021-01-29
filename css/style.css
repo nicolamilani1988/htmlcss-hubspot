@@ -38,6 +38,10 @@ body{
   display: inline-block;
 }
 
+header .button, footer .button{
+  padding: 10px;
+}
+
 .small-text{
   font-size: 80%;
 }
@@ -98,7 +102,6 @@ select.language{
 }
 
 header .button{
-  padding: 10px;
   display: inline;
 }
 
@@ -444,13 +447,13 @@ footer{
 /* regole utility links */
 #utility-links{
   background-color: #32495B;
-  padding: 20px 0 20px;
+  padding: 40px 0;
 }
 
 .row.utility-links > *{
   width: calc(25% - 8px);
   /* debug */
-  border: 1px solid white;
+  /* border: 1px solid white; */
   /* height: 100px; */
 }
 
@@ -463,6 +466,24 @@ footer{
   color: #DADEE0;
   text-decoration: none;
 }
+
+footer .button{
+  background-color: #DADEE0;
+  color: #32495B;
+  border: 1px solid #DADEE0;
+  margin-bottom: 20px;
+}
+
+.social-networks{
+  width: 100%;
+}
+
+.social-networks a i{
+  color: #DADEE0;
+  width: 15%;
+}
+
+
 
 
 /* regole languages+credits */
