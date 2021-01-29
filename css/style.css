@@ -58,6 +58,11 @@ h2{
   font-size: 40px;
 }
 
+.vertical-list-item li{
+  text-align: left;
+  list-style-type: none;
+}
+
 
 /* REGOLE HEADER */
 header{
@@ -268,7 +273,6 @@ main .button{
 }
 
 .row.top-strenght li{
-  display: inline-block;
   margin-right: 10px;
 }
 
@@ -290,11 +294,6 @@ main .button{
   margin:auto;
   height: 100px;
   object-fit: contain;
-}
-
-.row.strengths li{
-  text-align: left;
-  list-style-type: none;
 }
 
 .row.strengths hr{
@@ -435,28 +434,45 @@ h1 span{
 
 
 /* REGOLE FOOTER */
+footer{
+  color: #DADEE0;
+}
 
+.white-text{
+  color:white;
+}
 /* regole utility links */
-  #utility-links{
-    background-color: #32495B;
-    padding: 20px 0 20px;
-  }
+#utility-links{
+  background-color: #32495B;
+  padding: 20px 0 20px;
+}
 
-  .row.utility-links > *{
-    width: calc(25% - 8px);
-    border: 1px solid white;
-    height: 100px;
-  }
+.row.utility-links > *{
+  width: calc(25% - 8px);
+  /* debug */
+  border: 1px solid white;
+  /* height: 100px; */
+}
+
+#utility-links .vertical-list-item{
+  padding: 20px 0;
+}
+
+.vertical-list-item a{
+  line-height: 40px;
+  color: #DADEE0;
+  text-decoration: none;
+}
 
 
-  /* regole languages+credits */
-  #credits{
-    background-color: #32495B;
-    padding: 20px 0 20px;
-  }
+/* regole languages+credits */
+#credits{
+  background-color: #32495B;
+  padding: 20px 0 20px;
+}
 
-  .row.credits > *{
-    width: 40%;
-    border: 1px solid white;
-    height: 50px;
-  }
+.row.credits > *{
+  width: 40%;
+  border: 1px solid white;
+  height: 50px;
+}
