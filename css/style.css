@@ -173,12 +173,19 @@ h1{
 /* REGOLE MAIN */
 /* regole prima parte main */
 #strengths{
-  background-color: orange;
   padding: 20px 0 20px;
+  /* debug */
+  background-color: orange;
 }
 
 .section-title{
-  height: 50px;
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.section-title img{
+  width: 20%;
 }
 
 .row.strengths > *{
