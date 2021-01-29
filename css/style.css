@@ -170,7 +170,7 @@ h1{
 
 /* REGOLE MAIN */
 main .button{
-  margin: 10px 0;
+  margin: 20px 0;
 }
 
 /* regole prima parte main */
@@ -181,8 +181,7 @@ main .button{
 }
 
 #strengths h3, #strengths h4{
-  margin: 10px 0;
-  display: inline-block;
+  margin: 20px 0;
 }
 
 #strengths ul{
@@ -202,6 +201,14 @@ main .button{
   margin-left: 5px;
 }
 
+#strengths hr{
+  border: 1px solid #32495B;
+}
+
+.row.top-strenght > div:first-of-type, .row.strengths > div:first-of-type{
+  text-align: center;
+}
+
 .section-title{
   width: 70%;
   margin: auto;
@@ -215,7 +222,7 @@ main .button{
 .row.top-strenght, .row.strengths > div{
   background-color: white;
   border-radius: 5px;
-  box-shadow: 0 0 5px #32495B;
+  box-shadow: 1px 1px 5px 1px lightgrey;
 }
 
 .row.top-strenght > *{
@@ -229,7 +236,6 @@ main .button{
   width:15%;
   margin-right: 5%;
   margin-left: 10%;
-  text-align: center;
 }
 
 .row.top-strenght > div:first-of-type img{
@@ -243,7 +249,6 @@ main .button{
 .row.top-strenght hr{
   width: 60%;
   margin-left: 10%;
-  border: 1px solid #32495B;
   vertical-align: middle;
   display: inline-block
 }
@@ -253,12 +258,28 @@ main .button{
   margin-right: 10px;
 }
 
+.row.top-strenght h3 , .row.top-strenght h4{
+  display: inline-block;
+}
+
 
 .row.strengths > *{
   width: 30%;
-  height: 100px;
-  background-color: red;
   margin: 20px auto 0;
+  padding: 10px 20px 0;
+  /* debug */
+  /* height: 100px; */
+  /* background-color: red; */
+}
+
+.row.strengths > div:first-of-type img{
+  width: 40%;
+  margin:auto;
+}
+
+.row.strengths li{
+  text-align: left;
+  list-style-type: none;
 }
 
 .float-left.central{
