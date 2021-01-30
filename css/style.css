@@ -85,7 +85,7 @@ h1{
   background-color: #F4F9FD;
 }
 
-#strengths, #awards, #utility-links, .row.top-strenght{
+#strengths, #awards, #utility-links, .row.top-strenght, #partnerships, #join-us, #credits{
   padding: 40px 0;
 }
 
@@ -333,7 +333,7 @@ header .button{
   border-right: 1px solid transparent;
 }
 
-h1 span{
+.plus-small{
   font-size: 35px;
   font-weight: lighter;
 }
@@ -341,14 +341,13 @@ h1 span{
 
 /* regole terza parte main */
 #partnerships{
-  padding:40px 0;
   /* debug */
   /* background-color: yellow; */
   /* height: 200px; */
 }
 
 .row.partnerships > *{
-  margin: 20px;
+  margin: 0 40px;
   /* debug */
   /* height: 50px; */
 }
@@ -386,7 +385,6 @@ h1 span{
 
 /* regole quarta parte main */
 #join-us{
-  padding: 20px 0 20px;
   /* debug */
   /* background-color: #CEA9EE; */
   /* height: 200px; */
@@ -467,7 +465,6 @@ footer .button{
 /* regole languages+credits */
 #credits{
   background-color: #32495B;
-  padding: 20px 0 20px;
 }
 
 #credits .horizontal-list-item{
