@@ -338,6 +338,10 @@ main .button{
   height: 10px;
 }
 
+h1.text-margin{
+  margin-top: 20px;
+}
+
 #top-left-angle, .float-left.central-high, #top-right-angle{
   border-top: 1px solid transparent;
 }
