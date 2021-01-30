@@ -67,6 +67,10 @@ h2{
   list-style-type: none;
 }
 
+.horizontal-list-item a, header .button{
+  margin-left: 10px;
+}
+
 
 /* REGOLE HEADER */
 header{
@@ -77,10 +81,6 @@ header{
 
 header:first-child, header:last-child{
   min-height: 50px;
-}
-
-header a, header .button{
-  margin-left: 10px;
 }
 
 header a{
@@ -444,6 +444,8 @@ footer{
 .white-text{
   color:white;
 }
+
+
 /* regole utility links */
 #utility-links{
   background-color: #32495B;
@@ -484,16 +486,25 @@ footer .button{
 }
 
 
-
-
 /* regole languages+credits */
 #credits{
   background-color: #32495B;
   padding: 20px 0 20px;
 }
 
+#credits .horizontal-list-item{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#credits a{
+  color: #DADEE0;
+  text-decoration: none;
+}
+
 .row.credits > *{
   width: 40%;
+  /* debug */
   border: 1px solid white;
   height: 50px;
 }
