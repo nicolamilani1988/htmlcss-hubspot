@@ -232,7 +232,7 @@ header .button{
 
 .row.top-strenght img, .row.strengths img{
   height: 100px;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .row.top-strenght > *{
@@ -377,7 +377,7 @@ header .button{
 
 .partner-logo img{
   width: 100%;
-  min-height: 40px;
+  height: 30px;
   margin-top: 10px;
   object-fit: contain;
 }
