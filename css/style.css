@@ -50,7 +50,7 @@ p.text{
   line-height: 25px;
 }
 
-p.text, p.small-text{
+p.text-margin, p.small-text{
   margin: 20px 0;
 }
 
@@ -504,7 +504,12 @@ footer .button{
 
 .row.credits > *{
   width: 40%;
+  padding-top: 40px;
   /* debug */
-  border: 1px solid white;
-  height: 50px;
+  /* border: 1px solid white; */
+  /* height: 50px; */
+}
+
+#credits  .float-right ul{
+  text-align: right;
 }
