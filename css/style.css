@@ -50,7 +50,7 @@ p.text{
   line-height: 25px;
 }
 
-p.text-margin, p.small-text{
+.text-margin, .small-text{
   margin: 20px 0;
 }
 
@@ -62,13 +62,31 @@ h2{
   font-size: 40px;
 }
 
+.horizontal-list-item li{
+  display: inline-block;
+  margin-left: 10px;
+}
+
 .vertical-list-item li{
   text-align: left;
   list-style-type: none;
 }
 
-.horizontal-list-item a, header .button{
+header .button{
   margin-left: 10px;
+}
+
+h1{
+  font-size: 50px;
+  line-height: 50px;
+}
+
+#header-bar, #strengths{
+  background-color: #F4F9FD;
+}
+
+#strengths, #awards, #utility-links, .row.top-strenght{
+  padding: 40px 0;
 }
 
 
@@ -80,7 +98,7 @@ header{
 }
 
 header:first-child, header:last-child{
-  min-height: 50px;
+  min-height: 80px;
 }
 
 header a{
@@ -89,10 +107,6 @@ header a{
 
 
 /* regole header-bar */
-#header-bar{
-  background-color: #F4F9FD;
-}
-
 select.language{
   background-color: #F4F9FD;
   border: 1px solid #F4F9FD;
@@ -105,19 +119,21 @@ header .button{
   display: inline;
 }
 
-.row.head > *{
-  min-height: 50px;
-  line-height: 50px;
-  /* debug */
+.row.head > *, .row.nav > *{
+  min-height: 80px;
+  line-height: 80px;
+  /* debug .row.head */
   /* width: 200px; */
   /* background-color: lightblue; */
+  /* debug .row.nav */
+  /* width: 200px; */
+  /* background-color: blue; */
 }
 
 .row.head a:only-of-type:before{
   content:'';
   border-left: 2px solid #32495B;
-  min-height: 50px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 #login{
@@ -132,24 +148,9 @@ header .button{
   /* debug */
   /* background-color: #02BBED; */
 }
-.row.nav > *{
-  min-height: 50px;
-  line-height: 50px;
-  /* debug */
-  /* width: 200px; */
-  /* background-color: blue; */
-}
-
-.horizontal-list-item li{
-  display: inline-block;
-}
 
 #logo img{
   vertical-align: middle;
-}
-
-#logo{
-  margin-left: 0;
 }
 
 
@@ -158,7 +159,7 @@ header .button{
   background-image: url('../img/jumbotron.png');
   width: 100%;
   min-height: 570px;
-  padding-top: 100px;
+  padding-top: 160px;
   background-size: cover;
   background-position: top;
   /* debug */
@@ -174,15 +175,10 @@ header .button{
   /* background-color: green; */
 }
 
-h1{
-  font-size: 50px;
-  line-height: 50px;
-}
-
 
 /* REGOLE RIGA VERDE SEPARAZIONE */
 #separation-bar{
-  height: 50px;
+  min-height: 80px;
   background-color: #AFEBE4;
   border-top: 3px solid #32495B;
   border-bottom: 3px solid #32495B;
@@ -190,23 +186,10 @@ h1{
 
 
 /* REGOLE MAIN */
-main .button{
-  margin: 20px 0;
-}
-
 
 /* regole prima parte main */
-#strengths{
-  padding: 40px 0;
-  background-color: #F4F9FD;
-}
-
-#strengths h3, #strengths h4{
-  margin: 20px 0;
-}
-
 #strengths ul{
-  margin: 10px auto;
+  margin: 10px 0;
 }
 
 #strengths li i{
@@ -247,8 +230,12 @@ main .button{
   box-shadow: 1px 1px 5px 1px lightgrey;
 }
 
+.row.top-strenght img, .row.strengths img{
+  height: 100px;
+  object-fit: cover;
+}
+
 .row.top-strenght > *{
-  padding: 5% 0;
   /* debug */
   /* height: 50px; */
   /* background-color: red; */
@@ -264,22 +251,17 @@ main .button{
   width: 80%;
 }
 
-.row.top-strenght > div:last-of-type{
+.row.top-strenght > div:last-of-type, .row.top-strenght hr{
   width: 60%;
 }
 
 .row.top-strenght hr{
-  width: 60%;
   margin-left: 10%;
   vertical-align: middle;
   display: inline-block
 }
 
-.row.top-strenght li{
-  margin-right: 10px;
-}
-
-.row.top-strenght h3 , .row.top-strenght h4{
+.row.top-strenght h4{
   display: inline-block;
 }
 
@@ -295,8 +277,6 @@ main .button{
 .row.strengths img{
   width: 40%;
   margin:auto;
-  height: 100px;
-  object-fit: contain;
 }
 
 .row.strengths hr{
@@ -312,7 +292,6 @@ main .button{
 #awards{
   /* background-color: #00B6AC; */
   background-image: linear-gradient(to right, rgba(0,169,184), rgba(0,189,165));
-  padding: 40px 0;
   color: white;
   text-align: center;
 }
@@ -335,11 +314,7 @@ main .button{
 .row.awards .float-left:last-child h1:last-of-type::before{
   content: '';
   display: block;
-  height: 10px;
-}
-
-h1.text-margin{
-  margin-top: 20px;
+  min-height: 10px;
 }
 
 #top-left-angle, .float-left.central-high, #top-right-angle{
@@ -392,7 +367,7 @@ h1 span{
 
 .partner-logo{
   width: 23%;
-  height: 40%;
+  min-height: 40%;
   display:inline-block;
   margin-left: 8px;
   object-fit: contain;
@@ -403,7 +378,7 @@ h1 span{
 
 .partner-logo img{
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   margin-top: 10px;
   object-fit: contain;
 }
@@ -435,7 +410,7 @@ h1 span{
 
 .row.join-us img{
   width: 100%;
-  height: 350px;
+  min-height: 350px;
   object-fit: cover;
 }
 
@@ -453,7 +428,6 @@ footer{
 /* regole utility links */
 #utility-links{
   background-color: #32495B;
-  padding: 40px 0;
 }
 
 .row.utility-links > *{
