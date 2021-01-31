@@ -15,6 +15,10 @@ body{
   margin:auto;
 }
 
+main section, footer section, .row.top-strenght{
+  padding: 40px 0;
+}
+
 .row:after{
   display:table;
   content:'';
@@ -85,9 +89,6 @@ h1{
   background-color: #F4F9FD;
 }
 
-#strengths, #awards, #utility-links, .row.top-strenght, #partnerships, #join-us, #credits{
-  padding: 40px 0;
-}
 
 
 /* REGOLE HEADER */
@@ -157,11 +158,11 @@ header .button{
 /* REGOLE JUMBOTRON */
 .jumbotron{
   background-image: url('../img/jumbotron.png');
-  width: 100%;
-  min-height: 570px;
   padding-top: 160px;
-  background-size: cover;
-  background-position: top;
+  background-size:80% 101%;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-color: #FEF5EE;
   /* debug */
   /* background-color: lightpink; */
 }
@@ -169,19 +170,22 @@ header .button{
 #jumbotron-description{
   width: 40%;
   margin-left: 10%;
-  margin-top:50px;
+  margin-top:80px;
+  padding-bottom: 6%;
   /* debug */
   /* min-height: 250px; */
   /* background-color: green; */
 }
 
-
-/* REGOLE RIGA VERDE SEPARAZIONE */
-#separation-bar{
-  min-height: 80px;
+.jumbotron::after{
+  content:'';
+  height: 80px;
+  width: 120%;
   background-color: #AFEBE4;
   border-top: 3px solid #32495B;
   border-bottom: 3px solid #32495B;
+  display: inline-block;
+  margin-bottom: -5px;
 }
 
 
