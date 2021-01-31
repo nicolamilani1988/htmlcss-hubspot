@@ -405,14 +405,13 @@ header .button{
 }
 
 .row.join-us .float-right{
-  width: 30%;
+  width: 25%;
   /* debug */
   /* background-color: red; */
 }
 
 .row.join-us img{
   width: 100%;
-  min-height: 350px;
   object-fit: cover;
 }
 
