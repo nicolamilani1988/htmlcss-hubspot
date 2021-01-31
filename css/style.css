@@ -180,7 +180,7 @@ header .button{
 .jumbotron::after{
   content:'';
   height: 80px;
-  width: 120%;
+  width: 100%;
   background-color: #AFEBE4;
   border-top: 3px solid #32495B;
   border-bottom: 3px solid #32495B;
