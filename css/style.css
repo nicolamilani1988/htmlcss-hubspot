@@ -131,7 +131,7 @@ header .button{
   /* background-color: blue; */
 }
 
-.row.head a:only-of-type:before{
+.row.head .float-left a:only-of-type:before{
   content:'';
   border-left: 2px solid #32495B;
   margin-right: 10px;
