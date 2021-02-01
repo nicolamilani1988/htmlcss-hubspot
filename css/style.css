@@ -459,9 +459,9 @@ footer .button{
   width: 100%;
 }
 
-.social-networks a i{
+.social-networks a{
   color: #DADEE0;
-  width: 15%;
+  margin-right: 5%;
 }
 
 
