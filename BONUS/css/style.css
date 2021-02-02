@@ -171,16 +171,17 @@ header .button{
   border: 1px solid black;
 }
 
-.hidden-menu a{
-    background-color: yellow;
-}
-
 .hidden-list-item li{
   list-style-type: none;
 }
 
 .horizontal-list-item li:hover .hidden-menu{
   display: block;
+}
+
+.hidden-menu a:hover{
+  color: white;
+  background-color: red;
 }
 
 
