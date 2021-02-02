@@ -156,7 +156,7 @@ header .button{
 
 
 /* REGOLE JUMBOTRON */
-.jumbotron{
+#jumbotron{
   background-image: url('../img/jumbotron.png');
   padding-top: 160px;
   background-size:80% 101%;
@@ -167,7 +167,7 @@ header .button{
   /* background-color: lightpink; */
 }
 
-#jumbotron-description{
+.jumbotron-description{
   width: 40%;
   margin-left: 10%;
   margin-top:80px;
@@ -177,7 +177,7 @@ header .button{
   /* background-color: green; */
 }
 
-.jumbotron::after{
+#jumbotron::after{
   content:'';
   height: 80px;
   width: 100%;
@@ -293,8 +293,7 @@ header .button{
 
 
 /* regole seconda parte main */
-#awards{
-  /* background-color: #00B6AC; */
+#awards-and-achievements{
   background-image: linear-gradient(to right, rgba(0,169,184), rgba(0,189,165));
   color: white;
   text-align: center;
