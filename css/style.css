@@ -76,10 +76,6 @@ h2{
   list-style-type: none;
 }
 
-header .button{
-  margin-left: 10px;
-}
-
 h1{
   font-size: 50px;
   line-height: 50px;
@@ -88,7 +84,6 @@ h1{
 #header-bar, #strengths{
   background-color: #F4F9FD;
 }
-
 
 
 /* REGOLE HEADER */
@@ -100,6 +95,7 @@ header{
 
 header:first-child, header:last-child{
   min-height: 80px;
+  line-height: 80px;
 }
 
 header a{
@@ -121,14 +117,14 @@ header .button{
 }
 
 .row.head > *, .row.nav > *{
-  min-height: 80px;
-  line-height: 80px;
   /* debug .row.head */
   /* width: 200px; */
+  /* min-height: 80px;   */
   /* background-color: lightblue; */
   /* debug .row.nav */
   /* width: 200px; */
   /* background-color: blue; */
+  /* min-height: 80px; */
 }
 
 .row.head .float-left a:only-of-type:before{
@@ -159,7 +155,7 @@ header .button{
 #jumbotron{
   background-image: url('../img/jumbotron.png');
   padding-top: 160px;
-  background-size:80% 101%;
+  background-size:80% 100%;
   background-position: right;
   background-repeat: no-repeat;
   background-color: #FEF5EE;
@@ -213,10 +209,15 @@ header .button{
   border: 1px solid #32495B;
 }
 
+#strengths img{
+  height: 100px;
+  object-fit: contain;
+}
+
 .row.top-strenght > div:first-of-type, .row.strengths > div{
   text-align: center;
 }
-
+/* regole titolo pima parte */
 .section-title{
   width: 70%;
   margin: auto;
@@ -233,12 +234,7 @@ header .button{
   border-radius: 5px;
   box-shadow: 1px 1px 5px 1px lightgrey;
 }
-
-.row.top-strenght img, .row.strengths img{
-  height: 100px;
-  object-fit: contain;
-}
-
+/* regole blocco float orizzontale top-strenght */
 .row.top-strenght > *{
   /* debug */
   /* height: 50px; */
@@ -268,7 +264,7 @@ header .button{
 .row.top-strenght h4{
   display: inline-block;
 }
-
+/* regole 3 blocchi float verticali */
 .row.strengths > *{
   width: 30%;
   margin: 40px auto 0;
@@ -369,7 +365,6 @@ header .button{
 
 .partner-logo{
   width: 23%;
-  min-height: 40%;
   display:inline-block;
   margin-left: 8px;
   object-fit: contain;
@@ -444,7 +439,6 @@ footer{
 .vertical-list-item a{
   line-height: 40px;
   color: #DADEE0;
-  text-decoration: none;
 }
 
 footer .button{
@@ -476,7 +470,6 @@ footer .button{
 
 #credits a{
   color: #DADEE0;
-  text-decoration: none;
 }
 
 .row.credits > *{
