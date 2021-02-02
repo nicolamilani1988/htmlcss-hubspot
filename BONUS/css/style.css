@@ -243,6 +243,11 @@ header .button{
   border: 1px solid #32495B;
 }
 
+#strengths img{
+  height: 100px;
+  object-fit: contain;
+}
+
 .row.top-strenght > div:first-of-type, .row.strengths > div{
   text-align: center;
 }
@@ -262,11 +267,6 @@ header .button{
   background-color: white;
   border-radius: 5px;
   box-shadow: 1px 1px 5px 1px lightgrey;
-}
-
-.row.top-strenght img, .row.strengths img{
-  height: 100px;
-  object-fit: contain;
 }
 
 .row.top-strenght > *{
@@ -292,10 +292,9 @@ header .button{
 .row.top-strenght hr{
   margin-left: 10%;
   vertical-align: middle;
-  display: inline-block
 }
 
-.row.top-strenght h4{
+.row.top-strenght h4, .row.top-strenght hr{
   display: inline-block;
 }
 
