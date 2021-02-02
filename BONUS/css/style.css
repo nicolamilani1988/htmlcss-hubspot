@@ -146,7 +146,7 @@ header .button{
   display: none;
 }
 
-#header-bar .horizontal-list-item li:hover .searchbar{
+#header-bar .horizontal-list-item a:hover .searchbar{
   display: inline-block;
 }
 
@@ -179,7 +179,7 @@ header .button{
   list-style-type: none;
 }
 
-.horizontal-list-item li:hover .hidden-menu{
+.horizontal-list-item.software li a:hover .hidden-menu{
   display: block;
 }
 
