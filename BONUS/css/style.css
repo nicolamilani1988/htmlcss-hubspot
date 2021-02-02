@@ -179,7 +179,7 @@ header .button{
   list-style-type: none;
 }
 
-.horizontal-list-item.software li a:hover .hidden-menu{
+.horizontal-list-item li:hover .hidden-menu{
   display: block;
 }
 
@@ -555,4 +555,8 @@ footer .button{
 
 .chatbot:hover .hidden-chat{
   display: block;
+}
+
+.hidden-chat img:hover{
+  background-color: orange;
 }
