@@ -128,7 +128,7 @@ header .button{
   /* min-height: 80px; */
 }
 
-.row.head li:last-child:before{
+.row.head .float-left li:last-child:before{
   content:'';
   border-left: 2px solid #32495B;
   margin-right: 10px;
