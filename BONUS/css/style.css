@@ -96,6 +96,7 @@ header{
   position: fixed;
   left: 0;
   right: 0;
+  top: 0;
 }
 
 header:first-child, header:last-child{
@@ -163,7 +164,7 @@ header .button{
 #logo img{
   vertical-align: middle;
 }
-
+/* regole bonus */
 .hidden-menu{
   position: absolute;
   display: none;
@@ -182,6 +183,15 @@ header .button{
 header .horizontal-list-item li:hover .hidden-menu{
   display: block;
 }
+/* REGOLA PER METTERE HOVER SULL'ANCHOR */
+/* header .horizontal-list-item a:hover + .hidden-menu{
+  display: block;
+}
+
+.row.head .float-left .horizontal-list-item > li > a{
+  line-height: 50px;
+  display: inline-block;
+} */
 
 .hidden-menu a:hover{
   color: white;
@@ -192,8 +202,8 @@ header .horizontal-list-item li:hover .hidden-menu{
 /* REGOLE JUMBOTRON */
 .jumbotron{
   background-image: url('../img/jumbotron.png');
-  padding-top: 160px;
-  background-size:80% 101%;
+  margin-top: 160px;
+  background-size:100% 101%;
   background-position: right;
   background-repeat: no-repeat;
   background-color: #FEF5EE;
@@ -204,8 +214,8 @@ header .horizontal-list-item li:hover .hidden-menu{
 #jumbotron-description{
   width: 40%;
   margin-left: 10%;
-  margin-top:80px;
-  padding-bottom: 6%;
+  padding-top:80px;
+  padding-bottom: 10%;
   /* debug */
   /* min-height: 250px; */
   /* background-color: green; */
