@@ -91,6 +91,7 @@ header{
   position: fixed;
   left: 0;
   right: 0;
+  top:0;
 }
 
 header:first-child, header:last-child{
@@ -127,7 +128,7 @@ header .button{
   /* min-height: 80px; */
 }
 
-.row.head .float-left a:only-of-type:before{
+.row.head li:last-child:before{
   content:'';
   border-left: 2px solid #32495B;
   margin-right: 10px;
@@ -154,8 +155,8 @@ header .button{
 /* REGOLE JUMBOTRON */
 #jumbotron{
   background-image: url('../img/jumbotron.png');
-  padding-top: 160px;
-  background-size:80% 100%;
+  margin-top: 160px;
+  background-size:contain;
   background-position: right;
   background-repeat: no-repeat;
   background-color: #FEF5EE;
@@ -166,8 +167,8 @@ header .button{
 .jumbotron-description{
   width: 40%;
   margin-left: 10%;
-  margin-top:80px;
-  padding-bottom: 6%;
+  padding-top:80px;
+  padding-bottom: 10%;
   /* debug */
   /* min-height: 250px; */
   /* background-color: green; */
@@ -300,7 +301,7 @@ header .button{
 }
 
 .row.awards > *{
-  width: 25%;
+  min-width: 25%;
   border: 1px solid white;
   /* debug */
   /* height: 50px; */
