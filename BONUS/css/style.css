@@ -148,12 +148,14 @@ header .button{
 
 #header-bar .horizontal-list-item a:hover .searchbar{
   display: inline-block;
+  position: relative;
 }
 
 
 /* regole header-nav */
 #header-nav{
   background-color: white;
+  position: relative;
   /* debug */
   /* background-color: #02BBED; */
 }
@@ -165,10 +167,12 @@ header .button{
 .hidden-menu{
   position: absolute;
   display: none;
+  top: 55px;
   background-color: white;
   line-height: 25px;
   border-radius: 5px;
   border: 1px solid black;
+  z-index: 99;
 }
 
 .hidden-list-item li{
