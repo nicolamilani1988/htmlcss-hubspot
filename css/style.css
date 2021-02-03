@@ -296,44 +296,46 @@ header .button{
   text-align: center;
 }
 
-.row.awards{
-  padding: 20px 0;
+.row.awards-top{
+  padding-top: 20px;
 }
 
-.row.awards > *{
+.row.awards-down{
+  padding-bottom: 20px;
+}
+
+.row.awards-top > *, .row.awards-down > *{
   min-width: 25%;
   border: 1px solid white;
+  padding-top: 10px;
   /* debug */
   /* height: 50px; */
 }
 
-.row.awards .float-left{
-  padding-top: 10px;
-}
-
-.row.awards .float-left:last-child h1:last-of-type::before{
+.row.awards-down .float-left:last-child h1:last-of-type::before{
   content: '';
   display: block;
   min-height: 10px;
 }
 
-#top-left-angle, .float-left.central-high, #top-right-angle{
+.row.awards-top > *{
   border-top: 1px solid transparent;
 }
 
-#bottom-left-angle, .float-left.central-low, #bottom-right-angle{
+.row.awards-down > *{
   border-bottom: 1px solid transparent;
 }
 
-#top-left-angle, #bottom-left-angle{
+.row.awards-top div:first-child, .row.awards-down div:first-child{
   border-left: 1px solid transparent;
 }
 
-#top-right-angle, #bottom-right-angle{
+.row.awards-top div:last-child , .row.awards-down div:last-child{
   border-right: 1px solid transparent;
 }
 
-.plus-small{
+#awards-and-achievements .float-left > h1::after{
+  content:'+';
   font-size: 35px;
   font-weight: lighter;
 }
