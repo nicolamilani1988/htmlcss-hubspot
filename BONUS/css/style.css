@@ -179,7 +179,7 @@ header .button{
   list-style-type: none;
 }
 
-.horizontal-list-item li:hover .hidden-menu{
+header .horizontal-list-item li:hover .hidden-menu{
   display: block;
 }
 
